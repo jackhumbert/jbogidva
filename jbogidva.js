@@ -197,7 +197,10 @@ function generateHTML(tree) {
     var result = "";
     each(tree, function (element) {
         if (typeof element === "string") {
-            result += element;
+            if (window.location.hash == "#zlm")
+                result += generateZLMPhrase(element);
+            else 
+                result += element;
         } else {
             result += "<span ";
             result += "class=\"" + element.type +"\" ";

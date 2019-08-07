@@ -78,6 +78,7 @@ function addLojbanClass() {
 setRoot();
 addCss("book.css");
 addCss("jbogidva.css");
+addJs("zbalermorna.js");
 addJs("jbogidva.js");
 
 // These parts need to be executed after load, however. They
